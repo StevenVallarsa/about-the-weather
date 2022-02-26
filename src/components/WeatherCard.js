@@ -6,7 +6,7 @@ export default function WeatherCard(props) {
 
   return (
     <div className="weatherCard">
-      <div className="header">{day}</div>
+      <div className="header">DAY</div>
       <div className="symbol">
         {" "}
         <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="Weather Symbol" />
