@@ -1,15 +1,20 @@
 import React from "react";
 
 export default function WeatherCard(props) {
+  const { day, icon, desc, temp } = props.stats;
+  let tempF = Math.round((temp * 9) / 5 + 32);
+  console.log(day);
+
   return (
     <div className="weatherCard">
-      <div className="header">DAY</div>
+      <div className="header">{day}</div>
       <div className="symbol">
         {" "}
-        <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="Weather Symbol" />
+        <img src={`http://openweathermap.org/img/wn/${icon}@2x.png`} alt="Weather Symbol" />
       </div>
-      <div className="description">Sunny</div>
-      <div className="temp">36°C | 122°F</div>
+      <div className="description">{desc}</div>
+      <div className="temp">{temp}°C</div>
+      <div className="tempF">{tempF}°F</div>
     </div>
   );
 }

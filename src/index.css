@@ -37,21 +37,41 @@ button {
   background: blue;
   color: white;
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
   border-radius: 10px;
+  font-weight: 700;
+  border: none;
+}
+
+span {
+  margin: 0 10px;
+  font-weight: 700;
 }
 
 button.my-weather {
   background: green;
+  margin: 0;
 }
 
 input {
   padding: 10px;
-  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
 }
 
 form {
+  display: flex;
+  flex-direction: row;
   padding: 10px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.section {
+  padding: 15px;
+  border: dotted blue 1px;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .weatherContainer {
@@ -59,7 +79,6 @@ form {
 }
 
 .weatherCard {
-  /* border: solid white 5px; */
   background-color: white;
   width: 100px;
   height: 200px;
@@ -67,9 +86,23 @@ form {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 5px;
+  margin: 0 10px;
   padding: 0 5px;
   box-shadow: 2px 2px 2px rgb(110, 110, 110);
+}
+
+.temp {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.tempF {
+  font-size: 12px;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 

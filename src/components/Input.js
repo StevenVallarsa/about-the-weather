@@ -14,10 +14,11 @@ export default function Input(props) {
 
   return (
     <form action="weather">
-      <input type="text" value={city} onChange={e => setCity(e.target.value)} placeholder="eg: Toronto" />
-      <button type="submit">Where To?</button>
+      <input type="text" value={city} onChange={e => setCity(e.target.value)} placeholder="Center of the Universe" />
+      <button type="submit">Weather There</button>
+      <span style={{ display: local ? "inline" : "none" }}>OR</span>
       <button style={{ display: local ? "inline" : "none" }} className="my-weather" onClick={myLocation}>
-        My Weather
+        Weather Here
       </button>
     </form>
   );
