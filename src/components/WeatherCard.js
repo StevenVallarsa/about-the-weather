@@ -3,7 +3,6 @@ import React from "react";
 export default function WeatherCard(props) {
   const { day, icon, desc, temp } = props.stats;
   let tempF = Math.round((temp * 9) / 5 + 32);
-  console.log(day);
 
   return (
     <div className="weatherCard">
